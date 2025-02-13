@@ -9,23 +9,6 @@
     <title>Portfolio Homepage</title>
     <link href="assets/images/favicon.ico" rel="icon">
     <link href="assets/stylesheets/index.css" rel="stylesheet">
-    
-    <!--TODO CSS Section-->
-    <style>
-        td {
-            border: 1px solid black;
-        }
-
-        fancy-text {
-            font-family: "Calibri";
-            color: red;
-            font-size: x-large;
-        }
-        fancy-text:hover {
-            color: blue;
-            font-size: xx-large
-        }
-    </style>
 
     <!--TODO JS Section-->
     <script>
@@ -69,7 +52,7 @@
                 <figcaption>A picture of me!</figcaption>
             </figure>
             <about-text>
-                <h2>About Me</h2>
+                <h2>Who I am</h2>
                 <p>I am a student at <b><abbr title="University of California San Diego">UCSD</abbr></b> majoring in <i>Math-CS</i>.</p>
                 <h3>Interests</h3>
                 <p>I think <em>games</em> are <strong>pretty cool</strong>.</p>
@@ -80,17 +63,22 @@
         </section> 
         <br>
         <section id="myThoughts">
-            <h2>My Thoughts</h2>
-            <p>Show feed does not work for now, here is a <a href="feed.html">link</a> instead!</p>
+            <text-section>
+                <h2>How I Think</h2>
+                <p>Show feed does not work for now, here is a <a href="feed.html">link</a> instead!</p>
+                <button>Show Feed</button>
+            </text-section>
             <dialog>
                 <button autofocus>Hide Feed</button>
                 <p>Some links to some articles or something</p>
             </dialog>
             <!--TODO with JS-->
-            <button>Show Feed</button>
         </section>
+        <br>
         <section id="projectSection">
-            <h2>My Projects</h2>
+            <text-section>
+                <h2>What I Do</h2>
+            </text-section>
             <table id="projectTable">
                 <caption>A compact collection of my projects</caption>
                 <colgroup>
@@ -123,12 +111,14 @@
         </section>
         <br>
         <section id="skillSection">
-            <h2>My Skills</h2>
-            <ul>
-                <li>Experienced with <span class="javaText">Java</span> and <span class="cppText">C++</span></li>
-                <li>Skilled with problem solving</li>
-                <li>Eager to learn and improve</li>
-            </ul>
+            <text-section>
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Experienced with <span class="javaText">Java</span> and <span class="cppText">C++</span></li>
+                    <li>Skilled with problem solving</li>
+                    <li>Eager to learn and improve</li>
+                </ul>
+            </text-section>
         </section>
     </main>
     <footer>
