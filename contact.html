@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact Me!</title>
-        <link href="images/contact.ico" rel="icon">
+        <link href="assets/images/contact.ico" rel="icon">
     </head>
     <body>
         <header>
@@ -22,9 +22,9 @@
         </header>
         <main>
             <form action="/form-handler" method="POST">
-                <fieldset>
+                <fieldset id="contactInfo">
                     <legend>Contact Information</legend>
-                    <!--TODO with JS--> <input type="hidden" name="bot" value="true">
+                    <!--TODO with JS--> <input type="hidden" name="bot" value="false">
                     <label for="firstName"> First Name:
                         <input type="text" name="firstName" id="firstName" required>
                     </label>
@@ -36,6 +36,8 @@
                     <label for="email"> E-mail:
                         <input type="email" name="email" id="email" pattern="+@example\.com" required>
                     </label>
+                </fieldset>
+                <fieldset id="contactPurpose">
                     <br>
                     <label for="reason">Reason:
                         <input list="reasonList" id="reason" name="reason">
@@ -47,7 +49,7 @@
                     </datalist>
                     <br>
                     <label for="comments">Comments:
-                        <textarea name="comments" id="comments" cols="80" rows="5" placeholder="Lorem ipsum" required ></textarea>
+                        <textarea name="comments" id="comments" cols="80" rows="5" placeholder="Lorem ipsum" required></textarea>
                     </label>
                     <br>
                 </fieldset>

@@ -7,7 +7,8 @@
     <meta name="keywords" content="Ryan Kung">
     <meta name="author" content="Ryan Kung">
     <title>Portfolio Homepage</title>
-    <link href="images/favicon.ico" rel="icon">
+    <link href="assets/images/favicon.ico" rel="icon">
+    <link href="assets/stylesheets/index.css" rel="stylesheet">
     
     <!--TODO CSS Section-->
     <style>
@@ -32,42 +33,51 @@
 </head>
 <body>
     <header>
-        <hgroup>
-            <h1>Hi, I'm <fancy-text>Ryan Kung</fancy-text></h1>
-            <p>Welcome to my portfolio</p>
-        </hgroup>
-        <!--Can use a template for the nav in the future-->
-        <nav>
-            <a href="index.html">Home Page</a>
-            <a href="contact.html">Contact</a>
-            <a href="updates.html">Updates</a>
-            <a href="experiment.html">Experiment</a>
-        </nav>
-        <!--TODO Add CSS Stylesheets-->
-        <label for="themeSelect">Theme:
-            <select id="themeSelect">
-                <optgroup label="System">
-                    <option>Auto</option>
-                    <option>Dark</option>
-                    <option>Light</option>
-                </optgroup>
-                <optgroup label="Custom">
-                    <option>Retro</option>
-                </optgroup>
-            </select>
-        </label>
-        <!--TODO-->
-        <p>Please press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to quickly cycle through the themes. (TBD)</p> 
+        <header-info>
+            <hgroup>
+                <h1>Hi, I'm <fancy-text>Ryan Kung</fancy-text></h1>
+                <p>Welcome to my portfolio</p>
+            </hgroup>
+            <!--Can use a template for the nav in the future-->
+            <nav>
+                <a href="index.html">Home Page</a>
+                <a href="contact.html">Contact</a>
+                <a href="updates.html">Updates</a>
+                <a href="experiment.html">Experiment</a>
+                <theme-section>
+                    <!--TODO Add CSS Stylesheets-->
+                    <label for="themeSelect">Theme:</label>
+                        <select id="themeSelect">
+                            <optgroup label="System">
+                                <option>Auto</option>
+                                <option>Dark</option>
+                                <option>Light</option>
+                            </optgroup>
+                            <optgroup label="Custom">
+                                <option>Retro</option>
+                            </optgroup>
+                        </select>
+                </theme-section>
+            </nav>
+        </header-info>
         <hr>
     </header> 
     <main>
-        <figure>
-            <div id="selfie">
-                <img src="images/me.jpg" width="109" height="196" alt="An Image of Myself">
-            </div>
-            <figcaption>A picture of me!</figcaption>
-        </figure>
-        
+        <section id="aboutSection">
+            <figure id="selfie">
+                <img src="assets/images/me.jpg" width="327" height="588" alt="An Image of Myself">
+                <figcaption>A picture of me!</figcaption>
+            </figure>
+            <about-text>
+                <h2>About Me</h2>
+                <p>I am a student at <b><abbr title="University of California San Diego">UCSD</abbr></b> majoring in <i>Math-CS</i>.</p>
+                <h3>Interests</h3>
+                <p>I think <em>games</em> are <strong>pretty cool</strong>.</p>
+                <aside>
+                    Small related project: <a href="https://github.com/ermge/SteamScraper">Steam Data Scrape</a>
+                </aside>
+            </about-text>
+        </section> 
         <br>
         <section id="myThoughts">
             <h2>My Thoughts</h2>
@@ -80,7 +90,7 @@
             <button>Show Feed</button>
         </section>
         <section id="projectSection">
-            <h2>>My Projects</h2>
+            <h2>My Projects</h2>
             <table id="projectTable">
                 <caption>A compact collection of my projects</caption>
                 <colgroup>
@@ -113,23 +123,13 @@
         </section>
         <br>
         <section id="skillSection">
-            <h2>>My Skills</h2>
+            <h2>My Skills</h2>
             <ul>
                 <li>Experienced with <span class="javaText">Java</span> and <span class="cppText">C++</span></li>
                 <li>Skilled with problem solving</li>
                 <li>Eager to learn and improve</li>
             </ul>
         </section>
-        <section id="aboutSection">
-            <h2>>About Me</h2>
-            <p>I am a student at <b><abbr title="University of California San Diego">UCSD</abbr></b> majoring in <i>Math-CS</i>.</p>
-            <h3>Interests</h3>
-            <p>I think <em>games</em> are <strong>pretty cool</strong>.</p>
-            <fav-game>Celeste</fav-game>
-            <aside>
-                Small related project: <a href="https://github.com/ermge/SteamScraper">Steam Data Scrape</a>
-            </aside>
-        </section> 
     </main>
     <footer>
         <!--Can template the footer-->
