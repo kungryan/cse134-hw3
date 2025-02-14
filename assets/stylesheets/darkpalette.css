@@ -1,0 +1,21 @@
+:root {
+    --surface-1: #121212;
+    --surface-2: #282828;
+    --surface-3: #3f3f3f;
+    --surface-4: #575757;
+    --surface-5: #717171;
+    --surface-6: #8b8b8b;
+    --primary-1: #8bf2a3;
+    --primary-2: #9af4ad;
+    --primary-3: #a8f6b7;
+    --primary-4: #b5f7c2;
+    --primary-5: #c2f9cc;
+    --primary-6: #cffad6;
+    --tonal-1: #1e251f;
+    --tonal-2: #333934;
+    --tonal-3: #494f4a;
+    --tonal-4: #606661;
+    --tonal-5: #797e79;
+    --tonal-6: #929693;
+    --primary-text: white;
+}
