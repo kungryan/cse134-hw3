@@ -129,4 +129,5 @@ figcaption {
     max-width: var(--default-max-width);
     object-fit: contain;
     object-position: 50% 50%;
+    align-self: center;
 }

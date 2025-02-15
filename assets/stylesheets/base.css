@@ -146,6 +146,10 @@ h3 {
         transition: max-height 0.2s ease-out;
     }
 
+    nav > a {
+        pointer-events: none;
+    }
+
     menu-button {
         margin: var(--default-margin);
         width: 10dvw;
@@ -168,6 +172,10 @@ h3 {
 
     menu-button:has(#menuButton:checked) ~ nav{
         max-height: var(--default-max-height);
+    }
+
+    menu-button:has(#menuButton:checked) ~ nav > a{
+        pointer-events: auto;
     }
 
     #menuButton:checked ~ label > svg {
