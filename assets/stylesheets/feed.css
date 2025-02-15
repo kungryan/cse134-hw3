@@ -3,6 +3,7 @@
 main {
     margin-inline: auto;
     max-width: 62.5rem;
+    display: flex;
 }
 
 search > form {
@@ -71,7 +72,7 @@ custom-headline {
     font-size: var(--size-0);
 }
 
-picture {
+#article1 picture {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -80,13 +81,13 @@ picture {
     justify-content: center;
 }
 
-img, source {
+#article1 img, #article1 source {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
 
-iframe-container {
+#article1 iframe-container {
     margin: 0.5rem;
     padding: 0.5rem;
     width: 100%;
@@ -96,29 +97,37 @@ iframe-container {
     background-color: var(--surface-3);
 }
 
-iframe {
+#article1 iframe {
     display: block;
     justify-self: center;
     border: 0;
 }
 
 @media screen and (max-width: 768px) {
-    iframe {
+    #article1 iframe-container, #article1 iframe {
         display: none;
     }
 }
 
 figcaption {
-    margin: 0.5rem;
     font-style: italic;
     font-size: 0.75em;
     align-self: center;
 }
 
-figure {
+#article1 figure {
+    margin: 0.5rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+}
+
+#article1 audio {
+    width: 100%;
+    max-width: 100%;
+    align-self: center;
 }
