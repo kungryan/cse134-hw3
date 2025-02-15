@@ -104,8 +104,14 @@ custom-headline {
 }
 
 @media screen and (max-width: 768px) {
-    search > input {
+    search {
         width: 100%;
+        max-width: 100%;
+    }
+
+    search > form > input {
+        width: 100%;
+        max-width: 100%;
     }
 
     #article1 iframe-container, #article1 iframe {
