@@ -17,7 +17,7 @@ search > form > input {
     max-width: 100%;
     margin: 0.5rem;
     padding: 0.5rem;
-    font-family: Merriweather;
+    font-family: Merriweather, 'Times New Roman', Times, serif;
     font-size: var(--size-0);
     background-color: var(--surface-1);
     border: var(--primary-text) 1px solid;
@@ -58,7 +58,7 @@ search > form > button > svg {
 }
 
 custom-headline {
-    font-family: Lato;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: var(--size-4);
     line-height: 2em;
     margin: 0.5rem;
@@ -68,7 +68,7 @@ custom-headline {
 .articleSection > p {
     margin: 0.5rem;
     padding: 0.5rem;
-    font-family: merriweather;
+    font-family: merriweather, 'Times New Roman', Times, serif;
     font-size: var(--size-0);
 }
 
@@ -104,6 +104,10 @@ custom-headline {
 }
 
 @media screen and (max-width: 768px) {
+    search > input {
+        width: 100%;
+    }
+
     #article1 iframe-container, #article1 iframe {
         display: none;
     }

@@ -65,7 +65,7 @@ text-section {
 }
 
 h2 {
-    font-family: Lato;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: var(--size-3);
     line-height: 2em;
     margin: 0.5rem;
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-    font-family: Lato;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: var(--size-2);
     line-height: 2em;
 }
@@ -108,7 +108,7 @@ li::marker {
 }
 
 button {
-    font-family: Lato;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: var(--size--2);
     margin: 1rem 0;
     padding: 0.5rem;
