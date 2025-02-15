@@ -1,9 +1,5 @@
 @import url("base.css");
 
-main > br {
-    display: none;
-}
-
 main {
     max-width: 67.5rem;
     margin-inline: auto;
@@ -80,10 +76,6 @@ h3 {
     font-family: Lato;
     font-size: var(--size-2);
     line-height: 2em;
-}
-
-hr {
-    border: 0;
 }
 
 main > p {

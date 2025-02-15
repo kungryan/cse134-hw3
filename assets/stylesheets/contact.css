@@ -1,9 +1,5 @@
 @import url("base.css");
 
-br {
-    display: none;
-}
-
 main {
     margin-inline: auto;
     max-width: 62.5rem;
@@ -92,7 +88,7 @@ button[type=submit] {
     font-size: var(--size--2);
     align-self: flex-end;
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: var(--surface-2);
     color: var(--primary-text);
     border: var(--primary-1) solid 1px;
