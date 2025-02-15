@@ -1,5 +1,4 @@
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|2|3|4,1.5|2|3|4|6,s-l&g=s%2Cl%2Cxl%2C12,l,xl,12 */
-
 :root {
     --size--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
     --size--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
@@ -9,27 +8,55 @@
     --size-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
     --size-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
     --size-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
-    --surface-1: #f2f2f2;
-    --surface-2: #e5e5e5;
-    --surface-3: #e1e1e1;
-    --surface-4: #cbcbcb;
-    --surface-5: #bebebe;
-    --surface-6: #b1b1b1;
-    --primary-1: #13b1d5;
-    --primary-2: #37accb;
-    --primary-3: #49a6c2;
-    --primary-4: #57a1b8;
-    --primary-5: #619bae;
-    --primary-6: #6996a5;
-    --tonal-1: #fff7fb;
-    --tonal-2: #f0e9ed;
-    --tonal-3: #e1dbde;
-    --tonal-4: #d3ced0;
-    --tonal-5: #c5c0c2;
-    --tonal-6: #b6b3b5;
-    --primary-text: black;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --surface-1: #f2f2f2;
+        --surface-2: #e5e5e5;
+        --surface-3: #e1e1e1;
+        --surface-4: #cbcbcb;
+        --surface-5: #bebebe;
+        --surface-6: #b1b1b1;
+        --primary-1: #13b1d5;
+        --primary-2: #37accb;
+        --primary-3: #49a6c2;
+        --primary-4: #57a1b8;
+        --primary-5: #619bae;
+        --primary-6: #6996a5;
+        --tonal-1: #fff7fb;
+        --tonal-2: #f0e9ed;
+        --tonal-3: #e1dbde;
+        --tonal-4: #d3ced0;
+        --tonal-5: #c5c0c2;
+        --tonal-6: #b6b3b5;
+        --primary-text: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --surface-1: #121212;
+        --surface-2: #282828;
+        --surface-3: #3f3f3f;
+        --surface-4: #575757;
+        --surface-5: #717171;
+        --surface-6: #8b8b8b;
+        --primary-1: #8bf2a3;
+        --primary-2: #9af4ad;
+        --primary-3: #a8f6b7;
+        --primary-4: #b5f7c2;
+        --primary-5: #c2f9cc;
+        --primary-6: #cffad6;
+        --tonal-1: #1e251f;
+        --tonal-2: #333934;
+        --tonal-3: #494f4a;
+        --tonal-4: #606661;
+        --tonal-5: #797e79;
+        --tonal-6: #929693;
+        --primary-text: white;
+    }
+}
 
 @font-face {
     font-family: Lato;
@@ -45,6 +72,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "body" "footer";
 }
 
 body {
@@ -160,10 +198,11 @@ footer {
     text-align: center;
 }
 
-footer > address {
-    margin: 0.5rem 0.5rem 0;
+footer > address, footer > p {
+    margin: 0.5rem;
     padding: 0.5rem;
 }
+
 
 a {
     color: var(--primary-1);
@@ -185,5 +224,9 @@ button:hover {
 }
 
 hr {
+    display: none;
+}
+
+br {
     display: none;
 }

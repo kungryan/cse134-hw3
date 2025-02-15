@@ -9,8 +9,6 @@
     <title>Portfolio Homepage</title>
     <link href="assets/images/favicon.ico" rel="icon">
     <link href="assets/stylesheets/index.css" rel="stylesheet">
-    <link href="assets/stylesheets/narrowindex.css" media="screen and (max-width: 640px)" rel="stylesheet">
-
     <!--TODO JS Section-->
     <script>
     </script>
@@ -29,16 +27,16 @@
                 <a href="updates.html">Updates</a>
                 <a href="experiment.html">Experiment</a>
                 <theme-section>
-                    <!--TODO Add CSS Stylesheets-->
+                    <!-- TODO: Dropdown swapper with JS -->
                     <label for="themeSelect">Theme:</label>
                         <select id="themeSelect">
                             <optgroup label="System">
-                                <option>Auto</option>
-                                <option>Dark</option>
-                                <option>Light</option>
+                                <option value="auto">Auto</option>
+                                <option value="dark">Dark</option>
+                                <option value="light">Light</option>
                             </optgroup>
                             <optgroup label="Custom">
-                                <option>Retro</option>
+                                <option value="retro">Retro</option>
                             </optgroup>
                         </select>
                 </theme-section>
@@ -47,25 +45,27 @@
         <hr>
     </header>
     <main>
-        <section id="aboutSection">
-            <figure id="selfie">
-                <img src="assets/images/me.jpg" width="327" height="588" alt="An Image of Myself">
-                <figcaption>A picture of me!</figcaption>
-            </figure>
-            <about-text>
-                <h2>Who I am</h2>
-                <p>I am a student at <b><abbr title="University of California San Diego">UCSD</abbr></b> majoring in <i>Math-CS</i>.</p>
-                <h3>Interests</h3>
-                <p>I think <em>games</em> are <strong>pretty cool</strong>.</p>
-                <aside>
-                    Small related project: <a href="https://github.com/ermge/SteamScraper">Steam Data Scrape</a>
-                </aside>
-            </about-text>
+        <section id="aboutMe">
+            <h2>Who I am</h2>
+            <section-content id="aboutMeContent">
+                <figure id="selfie">
+                    <img src="assets/images/me.jpg" width="327" height="588" alt="An Image of Myself">
+                    <figcaption>A picture of me!</figcaption>
+                </figure>
+                <text-section>
+                    <p>I am a student at <b><abbr title="University of California San Diego">UCSD</abbr></b> majoring in <i>Math-CS</i>.</p>
+                    <h3>Interests</h3>
+                    <p>I think <em>games</em> are <strong>pretty cool</strong>.</p>
+                    <aside>
+                        Small related project: <a href="https://github.com/ermge/SteamScraper">Steam Data Scrape</a>
+                    </aside>
+                <text-section>
+            <section-content>
         </section> 
         <br>
         <section id="myThoughts">
+            <h2>What I Think</h2>
             <text-section>
-                <h2>What I Think</h2>
                 <p>Show feed does not work for now, here is a <a href="feed.html">link</a> instead!</p>
                 <button>Show Feed</button>
             </text-section>
@@ -77,9 +77,7 @@
         </section>
         <br>
         <section id="projectSection">
-            <text-section>
-                <h2>What I Do</h2>
-            </text-section>
+            <h2>What I Do</h2>
             <table id="projectTable">
                 <caption>A compact collection of my projects</caption>
                 <colgroup>
@@ -112,8 +110,8 @@
         </section>
         <br>
         <section id="skillSection">
+            <h2>My Skills</h2>
             <text-section>
-                <h2>My Skills</h2>
                 <ul>
                     <li>Experienced with <span class="javaText">Java</span> and <span class="cppText">C++</span></li>
                     <li>Skilled with problem solving</li>

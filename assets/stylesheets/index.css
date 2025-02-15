@@ -5,10 +5,6 @@ main > br {
 }
 
 main {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-flow: column wrap;
     max-width: 67.5rem;
     margin-inline: auto;
 }
@@ -26,6 +22,11 @@ section p {
 }
 
 #aboutSection { 
+    display: flex;
+    flex-flow: column wrap;
+}
+
+section-content#aboutMeContent {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -71,7 +72,8 @@ h2 {
     font-family: Lato;
     font-size: var(--size-3);
     line-height: 2em;
-
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 h3 {
@@ -107,6 +109,10 @@ caption {
 
 ul {
     list-style-position: inside;
+}
+
+li::marker {
+    color: var(--primary-1)
 }
 
 button {
