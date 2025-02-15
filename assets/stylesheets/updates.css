@@ -7,18 +7,17 @@ main {
 }
 
 changes-section {
-    width: 100%;
-    max-width: 100%;
+    width: var(--default-width);
+    max-width: var(--default-max-width);
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 
 details {
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem;
-    padding: 1rem;
+    max-width: var(--default-max-width);
+    margin: var(--default-margin);
+    padding: var(--default-padding);
     justify-items: center;
 }
 
@@ -33,8 +32,8 @@ summary::marker {
 }
 
 ol {
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: var(--slight-margin);
+    padding: var(--slight-padding);
     list-style-position: inside;
     font-family: merriweather, 'Times New Roman', Times, serif;
     background-color: var(--surface-2);
