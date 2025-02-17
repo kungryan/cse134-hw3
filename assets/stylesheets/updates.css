@@ -7,6 +7,7 @@ main {
 }
 
 changes-section {
+    margin: var(--default-margin);
     width: var(--default-width);
     max-width: var(--default-max-width);
     display: flex;
@@ -15,21 +16,34 @@ changes-section {
 }
 
 details {
+    width: 80%;
     max-width: var(--default-max-width);
-    margin: var(--default-margin);
-    padding: var(--default-padding);
-    justify-items: center;
+    margin: 0 auto var(--default-margin);
+    overflow: hidden;
+    background-color: var(--surface-2);
+    border-radius: 0.75rem;
 }
 
 summary {
+    padding: var(--default-padding);
     font-family: lato, Arial, Helvetica, sans-serif;
     font-size: var(--size-2);
+    cursor: pointer;
     user-select: none;
+    background-color: var(--surface-3);
+    transition: margin 0.2s ease-out;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
 }
 
 summary::marker {
     color: var(--primary-1);
+    
 }
+
+
 
 ol {
     margin: var(--slight-margin);

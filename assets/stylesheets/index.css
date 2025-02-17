@@ -89,7 +89,7 @@ button {
 
 fancy-text:hover {
     color: transparent;
-    background: radial-gradient(circle, var(--primary-1), var(--surface-6));
+    background: radial-gradient(circle, color(srgb 0 1 0), color-mix(in srgb, blue 25%, white));
     animation: fancy 2s linear infinite;
     background-size: 200% 200%;
     background-clip: text;
