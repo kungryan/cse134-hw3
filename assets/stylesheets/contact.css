@@ -11,8 +11,6 @@ form {
 fieldset {
     border: 0.2em solid var(--primary-2);
     background-color: var(--surface-2);
-    display: flex;
-    flex-flow: column wrap;
 }
 
 label {
@@ -70,6 +68,7 @@ textarea {
 }
 
 legend {
+    margin-inline: auto;
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: var(--size-2);
     padding: var(--slight-padding);
@@ -98,4 +97,16 @@ svg {
 
 line {
     stroke: var(--surface-1);
+}
+
+output {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: Merriweather, 'Times New Roman', Times, serif;
+    font-size: var(--size-0);
+}
+
+error-message, info-message {
+    margin: var(--slight-margin);
 }

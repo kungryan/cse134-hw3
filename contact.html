@@ -33,10 +33,10 @@
             <hr>
         </header>
         <main>
-            <form action="/form-handler" method="POST">
+            <form action="https://httpbin.org/post" method="POST">
                 <fieldset id="contactInfo">
                     <legend>Contact Information</legend>
-                    <!--TODO with JS--> <input type="hidden" name="bot" value="false">
+                    <!--TODO with JS--> <input type="hidden" name="possible_bot" value="true">
                     <name-info>
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" placeholder="John Doe" required>
@@ -67,6 +67,11 @@
                     <br>
                 </fieldset>
                 <button type="submit">Submit</button>
+                <output>
+                    <error-message>Error message (if any)</error-message>
+                    <br>
+                    <info-message>Info message (if any)</info-message>
+                </output>
             </form>
         </main>
         <footer>
