@@ -152,8 +152,8 @@ h3 {
 
     menu-button {
         margin: var(--default-margin);
-        width: 5dvw;
-        height: 5dvh;
+        width: 10dvw;
+        height: 10dvh;
         justify-self: flex-end;
     }
 
@@ -164,8 +164,8 @@ h3 {
     label[for=menuButton] > svg {
         cursor: pointer;
         user-select: none;
-        width:100%;
-        max-width: 100%;
+        width: var(--default-width);
+        max-width: var(--default-max-width);
         fill: var(--primary-1);
         transition: transform 0.2s ease-out;
     }
